@@ -64,37 +64,37 @@ const WeOffer = () => {
                 title: "Courses",
                 image: "/Images/offer2.jpg",
                 isNew: false,
-                para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+                para: "Unlock potential with tailored courses: on-site, online, live, or prerecorded.",
               },
               {
                 title: "Tutorials",
                 image: "/Images/offer1.png",
                 isNew: true,
-                para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+                para: "Comprehensive tutorials: free knowledge, articles, videos, anytime, anywhere.",
               },
               {
                 title: "Training",
                 image: "/Images/offer3.jpg",
                 isNew: false,
-                para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+                para: "Specialized training: on-site, remote, live web-based, practical learning.",
               },
               {
                 title: "Consulting",
                 image: "/Images/offer4.jpg",
                 isNew: true,
-                para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+                para: "Top-tier consulting: expert advice, innovative solutions, tailored to needs.",
               },
               {
                 title: "Workshops",
                 image: "/Images/offer5.jpg",
                 isNew: false,
-                para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+                para: "Dynamic workshops: on-site, online, real-time, collaboration, hands-on learning.",
               },
               {
                 title: "News",
                 image: "/Images/offer6.jpg",
                 isNew: false,
-                para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+                para: "Stay updated with the latest industry insights, events, and breakthroughs.",
               },
             ].map((item, i) => (
               <a
