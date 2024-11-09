@@ -109,8 +109,12 @@ const WeOffer = () => {
                 onMouseEnter={() => handleMouseEnter(i)}
                 onMouseLeave={handleMouseLeave}
               >
-                <figure className="h-48 bg-[#B3E240]">
-                  <img src={item.image} alt={item.title} />
+                <figure className="h-48 bg-[#B3E240] flex items-center justify-center">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-4/5 border h-4/5"
+                  />
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title">
