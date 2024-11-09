@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AboutUs from "./Pages/AboutUs";
 import Contact from "./Pages/Contact";
 import Service from "./Pages/Service";
+import SAGEteam from "./Pages/SAGEteam";
 
 const App = () => {
   React.useEffect(() => {
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Service />} />
+        <Route path="/sage-team" element={<SAGEteam />} />
       </Routes>
     </BrowserRouter>
   );

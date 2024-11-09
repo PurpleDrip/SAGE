@@ -21,7 +21,7 @@ const About = () => {
       >
         <li>
           <a
-            href="/about/#sage-team"
+            href="/sage-team"
             className="btn btn-sm btn-block btn-ghost justify-start"
           >
             SAGE Team
