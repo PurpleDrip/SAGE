@@ -85,7 +85,7 @@ const WeOffer = () => {
                 para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
               },
               {
-                title: "Workshop",
+                title: "Workshops",
                 image: "/Images/Offer1.png",
                 isNew: false,
                 para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
