@@ -15,22 +15,28 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setSwitched((prev) => !prev);
-    }, 5000);
+    // Only run on non-mobile devices
+    if (window.innerWidth > 768) {
+      const intervalId = setInterval(() => {
+        setSwitched((prev) => !prev);
+      }, 5000);
 
-    return () => clearInterval(intervalId);
+      return () => clearInterval(intervalId);
+    }
   }, []);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 0);
-    };
+    // Only run on non-mobile devices
+    if (window.innerWidth > 768) {
+      const handleScroll = () => {
+        setScrolled(window.scrollY > 0);
+      };
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
+      window.addEventListener("scroll", handleScroll);
+      handleScroll();
 
-    return () => window.removeEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }
   }, []);
 
   useEffect(() => {
@@ -62,7 +68,7 @@ const Header = () => {
         </div>
 
         <label
-          className={`input input-bordered flex items-center gap-2 ${
+          className={`input input-bordered flex items-center gap-2 hide ${
             scrolled ? "hide" : ""
           }`}
         >
@@ -80,8 +86,12 @@ const Header = () => {
             />
           </svg>
         </label>
+        <div className="show">
+          <Theme />
+        </div>
       </div>
-      <div className="links-wrapper flex items-center gap-4 bg-base-200 lg:menu-horizontal rounded-box px-8 fixed top-12 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
+
+      <div className="hide links-wrapper flex items-center gap-4 bg-base-200 lg:menu-horizontal rounded-box px-8 fixed top-12 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
         <Theme />
         <a href="/">
           <button className="btn-ghost btn btn-primary ">Home</button>

@@ -46,7 +46,7 @@ select {
   font: inherit;
 }
 
-.hide {
+.show {
   display: none;
 }
 
@@ -97,4 +97,13 @@ select {
   height: 100%;
   object-fit: cover;
   object-position: top 10%;
+}
+
+@media (max-width: 768px) {
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
 }

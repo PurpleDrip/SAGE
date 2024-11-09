@@ -18,45 +18,50 @@ const Hero = () => {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
   return (
-    <div className="h-[70vh] my-24 mx-32 ">
-      <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        onAutoplayTimeLeft={onAutoplayTimeLeft}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img src="/Images/hero1.png" alt="hero" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="/Images/hero2.png" alt="hero" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="/Images/hero3.png" alt="hero" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="/Images/hero4.png" alt="hero" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="/Images/hero5.png" alt="hero" />
-        </SwiperSlide>
-        <div className="autoplay-progress" slot="container-end">
-          <svg viewBox="0 0 48 48" ref={progressCircle}>
-            <circle cx="24" cy="24" r="20"></circle>
-          </svg>
-          <span ref={progressContent}></span>
-        </div>
-      </Swiper>
-    </div>
+    <>
+      <div className="h-[70vh] my-24 mx-32 hide">
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          onAutoplayTimeLeft={onAutoplayTimeLeft}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img src="/Images/hero1.png" alt="hero" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/Images/hero2.png" alt="hero" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/Images/hero3.png" alt="hero" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/Images/hero4.png" alt="hero" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/Images/hero5.png" alt="hero" />
+          </SwiperSlide>
+          <div className="autoplay-progress" slot="container-end">
+            <svg viewBox="0 0 48 48" ref={progressCircle}>
+              <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span ref={progressContent}></span>
+          </div>
+        </Swiper>
+      </div>
+      <div className="show mt-[3rem] mx-8">
+        <img src="/Images/hero1.png" alt="hero" />
+      </div>
+    </>
   );
 };
 
