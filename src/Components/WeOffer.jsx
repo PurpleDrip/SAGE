@@ -62,76 +62,73 @@ const WeOffer = () => {
             {[
               {
                 title: "Courses",
-                image: "/Images/Offer1.png",
+                image: "/Images/offer2.jpg",
                 isNew: false,
                 para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
               },
               {
                 title: "Tutorials",
-                image: "/Images/Offer1.png",
+                image: "/Images/offer1.png",
                 isNew: true,
                 para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
               },
               {
                 title: "Training",
-                image: "/Images/Offer1.png",
+                image: "/Images/offer3.jpg",
                 isNew: false,
                 para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
               },
               {
                 title: "Consulting",
-                image: "/Images/Offer1.png",
+                image: "/Images/offer4.jpg",
                 isNew: true,
                 para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
               },
               {
                 title: "Workshops",
-                image: "/Images/Offer1.png",
+                image: "/Images/offer5.jpg",
                 isNew: false,
                 para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
               },
               {
                 title: "News",
-                image: "/Images/Offer1.png",
-                isNew: false,
-                para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-              },
-              {
-                title: "Upcoming Events",
-                image: "/Images/Offer1.png",
+                image: "/Images/offer6.jpg",
                 isNew: false,
                 para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
               },
             ].map((item, i) => (
-              <div
-                className="card bg-base-100 w-96 shadow-xl relative"
+              <a
+                href={`/services/#${item.title}`}
+                className="no-underline"
                 key={i}
-                onMouseEnter={() => handleMouseEnter(i)}
-                onMouseLeave={handleMouseLeave}
               >
-                <figure className="h-48 bg-[#B3E240] flex items-center justify-center">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-4/5 border h-4/5"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">
-                    {item.title}
-                    {item.isNew && (
-                      <div className="badge badge-secondary">NEW</div>
-                    )}
-                  </h2>
-                </div>
                 <div
-                  className={`${
-                    hoveredCard === i ? "flex" : "hidden"
-                  } para-container absolute bottom-0 h-full w-full bg-black/50 flex items-center justify-center px-8 rounded-2xl`}
+                  className="card bg-base-100 w-96 shadow-xl relative"
+                  onMouseEnter={() => handleMouseEnter(i)}
+                  onMouseLeave={handleMouseLeave}
                 >
-                  <p className="text-white text-xl text-center">{item.para}</p>
+                  <figure className="h-48 bg-[#B3E240] flex items-center justify-center offer-img-container">
+                    <img src={item.image} alt={item.title} className="" />
+                  </figure>
+                  <div className="card-body">
+                    <h2 className="card-title">
+                      {item.title}
+                      {item.isNew && (
+                        <div className="badge badge-secondary">NEW</div>
+                      )}
+                    </h2>
+                  </div>
+                  <div
+                    className={`${
+                      hoveredCard === i ? "flex" : "hidden"
+                    } para-container absolute top-0 h-[68%] w-full bg-black/50 flex items-center justify-center px-8 `}
+                  >
+                    <p className="text-white text-xl text-center">
+                      {item.para}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>

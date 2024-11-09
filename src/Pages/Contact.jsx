@@ -5,10 +5,15 @@ import Footer from "../Components/Footer";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
+    surname: "",
     email: "",
+    phone: "",
+    country: "",
+    state: "",
     message: "",
   });
 
+  // Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -17,24 +22,31 @@ const Contact = () => {
     }));
   };
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted", formData);
+    // Reset form after submission
     setFormData({
       name: "",
+      surname: "",
       email: "",
+      phone: "",
+      country: "",
+      state: "",
       message: "",
     });
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-between gap-8 ">
+    <div className="min-h-screen flex flex-col justify-between gap-8">
       <Header />
       <div className="flex-grow w-[35rem] p-8 gap-4 flex flex-col shadow-xl items-center my-8 mx-auto border border-primary-content rounded-3xl">
         <h1 className="text-5xl font-bold tracking-[1rem] pl-4 after-underline mb-8 text-accent after:bg-secondary">
           Contact Us
         </h1>
-        <form className="flex flex-col gap-4 w-1/2 " onSubmit={handleSubmit}>
+        <form className="flex flex-col gap-4 w-1/2" onSubmit={handleSubmit}>
+          {/* Name Field */}
           <div className="form-control w-full">
             <label className="label">
               <span className="label-text">Name</span>
@@ -50,6 +62,23 @@ const Contact = () => {
             />
           </div>
 
+          {/* Surname Field */}
+          <div className="form-control w-full">
+            <label className="label">
+              <span className="label-text">Surname</span>
+            </label>
+            <input
+              type="text"
+              name="surname"
+              value={formData.surname}
+              onChange={handleChange}
+              placeholder="Enter your surname"
+              className="input input-bordered w-full"
+              required
+            />
+          </div>
+
+          {/* Email Field */}
           <div className="form-control w-full">
             <label className="label">
               <span className="label-text">Email</span>
@@ -65,6 +94,55 @@ const Contact = () => {
             />
           </div>
 
+          {/* Phone Number Field */}
+          <div className="form-control w-full">
+            <label className="label">
+              <span className="label-text">Phone</span>
+            </label>
+            <input
+              type="tel"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              placeholder="Enter your phone number"
+              className="input input-bordered w-full"
+              required
+            />
+          </div>
+
+          {/* Country Field */}
+          <div className="form-control w-full">
+            <label className="label">
+              <span className="label-text">Country</span>
+            </label>
+            <input
+              type="text"
+              name="country"
+              value={formData.country}
+              onChange={handleChange}
+              placeholder="Enter your country"
+              className="input input-bordered w-full"
+              required
+            />
+          </div>
+
+          {/* State Field */}
+          <div className="form-control w-full">
+            <label className="label">
+              <span className="label-text">State</span>
+            </label>
+            <input
+              type="text"
+              name="state"
+              value={formData.state}
+              onChange={handleChange}
+              placeholder="Enter your state"
+              className="input input-bordered w-full"
+              required
+            />
+          </div>
+
+          {/* Message Field */}
           <div className="form-control w-full">
             <label className="label">
               <span className="label-text">Message</span>
@@ -79,6 +157,7 @@ const Contact = () => {
             />
           </div>
 
+          {/* Submit Button */}
           <button type="submit" className="btn btn-primary mt-4">
             Send Message
           </button>
