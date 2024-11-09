@@ -14,9 +14,9 @@
 
 .swiper-slide img {
   display: block;
-  width: 100%;
+  width: 90%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .autoplay-progress {
@@ -30,7 +30,7 @@
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  color: #fb6b31; /* Using DaisyUI's accent variable */
+  color: #fb6b31;
 }
 
 .autoplay-progress svg {
@@ -42,9 +42,18 @@
   width: 100%;
   height: 100%;
   stroke-width: 4px;
-  stroke: #fb6b31; /* Using DaisyUI's accent variable */
+  stroke: #fb6b31;
   fill: none;
   stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fb6b31;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fb6b31;
 }

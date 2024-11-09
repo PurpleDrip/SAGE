@@ -18,7 +18,7 @@ const Hero = () => {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
   return (
-    <div className="h-[70vh] my-24 mx-32 relative -z-10">
+    <div className="h-[70vh] my-24 mx-32 ">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -35,39 +35,19 @@ const Hero = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img
-            src="/Images/hero1.png"
-            alt="hero"
-            className="object-contain h-full"
-          />
+          <img src="/Images/hero1.png" alt="hero" />
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            src="/Images/hero2.png"
-            alt="hero"
-            className="object-cover w-full h-full"
-          />
+          <img src="/Images/hero2.png" alt="hero" />
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            src="/Images/hero3.jpg"
-            alt="hero"
-            className="object-cover w-full h-full"
-          />
+          <img src="/Images/hero3.png" alt="hero" />
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            src="/Images/hero4.jpg"
-            alt="hero"
-            className="object-cover w-full h-full"
-          />
+          <img src="/Images/hero4.png" alt="hero" />
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            src="/Images/hero5.jpg"
-            alt="hero"
-            className="object-cover w-full h-full"
-          />
+          <img src="/Images/hero5.png" alt="hero" />
         </SwiperSlide>
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>

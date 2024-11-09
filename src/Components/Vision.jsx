@@ -5,7 +5,11 @@ const Vision = () => {
     <div className="h-[20rem] mx-16 my-32 p-8 rounded-xl shadow-2xl card bg-primary text-primary-content">
       <h3 className="text-4xl font-bold mb-4 card-title source-code-pro-extra-bold">
         Vision of
-        <img src="/Images/SAGETEXT.png" alt="" className="w-20 ml-4 inline" />
+        <img
+          src="/Images/SAGE text_blue.png"
+          alt=""
+          className="w-20 ml-4 inline"
+        />
       </h3>
       <div className="flex flex-col gap-4">
         <h2 className="text-2xl card-title flex flex-col items-start">
