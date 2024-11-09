@@ -100,7 +100,7 @@ const Timeline = () => {
           </li>
         </ul>
       </div>
-      <div className="show mt-16">
+      <div className="show mt-16 relative -z-10">
         <ul className="timeline timeline-vertical">
           <li>
             <div className="timeline-start timeline-box">SAGE was born</div>

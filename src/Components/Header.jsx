@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import About from "./About";
 import Services from "./Service";
 import News from "./News";
+import { slide as Menu } from "react-burger-menu";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -57,9 +58,7 @@ const Header = () => {
   return (
     <>
       <div
-        className={`title-bar mt-4 flex ${
-          scrolled ? "justify-center" : "justify-between"
-        } items-center px-8 h-16 top-4  `}
+        className={`title-bar mt-4 flex justify-between items-center px-8 h-16 top-4  `}
       >
         <div className={`${scrolled ? "hide" : ""}`}>
           <a href="/">
@@ -89,26 +88,7 @@ const Header = () => {
         <div className="show show-tb">
           <Theme />
         </div>
-        <div className="dropdown dropdown-end hide show show-tb relative z-30">
-          <div tabIndex={0} role="button" className="btn btn-ghost rounded-btn">
-            Menu
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu dropdown-content bg-base-100 rounded-box z-[1] mt-4 w-52 p-2 shadow"
-          >
-            <li>
-              <a href="/about">About Us</a>
-            </li>
-            <li>
-              <a href="/services">Services</a>
-            </li>
-
-            <li>
-              <a href="/contact">Contact Us</a>
-            </li>
-          </ul>
-        </div>
+        {/* <div> Add the Burger menu here</div> */}
       </div>
 
       <div className="hide links-wrapper flex items-center gap-4 bg-base-200 lg:menu-horizontal rounded-box px-8 fixed top-12 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">

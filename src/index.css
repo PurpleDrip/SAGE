@@ -182,6 +182,9 @@ select {
   .service-container p {
     font-size: 1rem;
   }
+  .image-holder {
+    width: 100%;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -252,5 +255,8 @@ select {
   }
   .form-container {
     width: 90%;
+  }
+  .image-holder {
+    width: 100%;
   }
 }
