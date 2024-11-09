@@ -108,17 +108,11 @@ select {
   }
   .vision-container {
     height: auto;
-
-    margin: 0;
-    padding: 0;
-    margin-top: 3rem;
+    margin: 3rem 1rem 0;
     padding: 1rem;
-
-    margin-inline: 1rem;
   }
   .vision-container h3 {
     font-size: 2rem;
-    text-align: center;
     margin-inline: auto;
   }
   .vision-container h4 {
@@ -126,5 +120,37 @@ select {
   }
   .vision-container p {
     font-size: 1rem;
+  }
+  .offer-wrapper {
+    margin: 0;
+  }
+  .chat-container {
+    margin: 0;
+    padding: 0;
+    margin-top: 3rem;
+    width: 90%;
+    margin-inline: auto;
+    padding: 1rem;
+  }
+  .offer-container {
+    margin: 0;
+    width: 100%;
+    margin-top: 5rem;
+    margin-inline: auto;
+  }
+  .offer-container h1 {
+    font-size: 1.5rem;
+  }
+  .offer-container h1 > img {
+    width: 3.5rem;
+  }
+  .card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0;
+  }
+  .card {
+    width: 100%;
   }
 }

@@ -13,7 +13,7 @@ const WeOffer = () => {
 
   return (
     <div>
-      <div className="gap-16 mx-24">
+      <div className="gap-16 mx-24 offer-wrapper">
         <div className="chat-container mx-36  p-8 shadow-2xl rounded-3xl ">
           <div className="chat chat-start ">
             <div className="chat-image avatar">
@@ -49,7 +49,7 @@ const WeOffer = () => {
             <div className="chat-footer opacity-50">Seen at 12:46</div>
           </div>
         </div>
-        <div className="flex flex-col gap-16 mt-32">
+        <div className="flex flex-col gap-16 mt-32 offer-container">
           <h1 className="text-5xl font-bold text-center text-accent source-code-pro-extra-bold after-underline after:bg-secondary">
             What we Offer at
             <img
@@ -99,7 +99,7 @@ const WeOffer = () => {
             ].map((item, i) => (
               <a
                 href={`/services/#${item.title}`}
-                className="no-underline"
+                className="no-underline card-with-link"
                 key={i}
               >
                 <div
@@ -121,7 +121,7 @@ const WeOffer = () => {
                   <div
                     className={`${
                       hoveredCard === i ? "flex" : "hidden"
-                    } para-container absolute top-0 h-[68%] w-full bg-black/50 flex items-center justify-center px-8 `}
+                    } para-container absolute top-0 h-[68%] w-full bg-black/50 flex items-center justify-center px-8 hide`}
                   >
                     <p className="text-white text-xl text-center">
                       {item.para}

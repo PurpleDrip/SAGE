@@ -2,7 +2,7 @@ import React from "react";
 
 const Vision = () => {
   return (
-    <div className="h-auto mx-16 my-32 p-8 rounded-3xl shadow-2xl card bg-primary text-primary-content border border-primary-content vision-container">
+    <div className="h-auto mx-16 my-32 p-8 rounded-3xl shadow-2xl bg-primary text-primary-content border border-primary-content vision-container">
       <h3 className="text-4xl font-bold mb-4 card-title source-code-pro-extra-bold flex items-center">
         Vision of
         <img
