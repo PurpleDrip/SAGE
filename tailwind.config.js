@@ -6,6 +6,34 @@ export default {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["dark", "light", "retro", "cyberpunk", "valentine", "aqua"],
+    themes: [
+      {
+        mytheme: {
+          primary: "#006AAD",
+
+          secondary: "#35A9EF",
+
+          accent: "#FB6B31",
+
+          neutral: "#4b5563",
+
+          "base-100": "#1f2937",
+
+          info: "#f3f4f6",
+
+          success: "#00ff00",
+
+          warning: "#00ff00",
+
+          error: "#f43f5e",
+        },
+      },
+      "dark",
+      "light",
+      "retro",
+      "cyberpunk",
+      "valentine",
+      "aqua",
+    ],
   },
 };
