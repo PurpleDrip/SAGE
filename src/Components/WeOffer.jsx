@@ -14,7 +14,7 @@ const WeOffer = () => {
   return (
     <div>
       <div className="gap-16 mx-24">
-        <div className="chat-container mx-36  p-8 shadow-2xl rounded-3xl bg-accent">
+        <div className="chat-container mx-36  p-8 shadow-2xl rounded-3xl ">
           <div className="chat chat-start ">
             <div className="chat-image avatar">
               <div className="w-10 rounded-full">

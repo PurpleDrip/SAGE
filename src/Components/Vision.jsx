@@ -2,23 +2,26 @@ import React from "react";
 
 const Vision = () => {
   return (
-    <div className="h-[20rem] mx-16 my-32 p-8 bg-primary rounded-xl shadow-2xl">
-      <h3 className="text-4xl font-bold mb-4">
+    <div className="h-[19rem] mx-16 my-32 p-8 rounded-xl shadow-2xl card bg-primary text-primary-content">
+      <h3 className="text-4xl font-bold mb-4 card-title">
         Vision of
         <img src="/Images/SAGETEXT.png" alt="" className="w-20 ml-4 inline" />
       </h3>
-      <div className="flex flex-col gap-8">
-        <h2 className="text-xl">
-          Shastry Associates Global Enterprise (SAGE), a group of diverse
-          professionals committed to disseminating knowledge with excellence in
-          the fields of radio frequency, microwave, and wireless engineering and
-          technologies.
+      <div className="flex flex-col gap-4">
+        <h2 className="text-2xl card-title flex flex-col items-start">
+          <h2 className="font-bold pl-4">
+            Shastry Associates Global Enterprise,
+          </h2>
+          <p>
+            also known as SAGE aims to leadin RF, microwave, and wireless
+            technologies through focused R&D and strategic partnerships. We plan
+            to expand our product line with innovative, customer-centric
+            solutions while strengthening our global presence. By prioritizing
+            sustainability and leveraging cutting-edge research, SAGE is set to
+            deliver exceptional, future-proof products that meet the evolving
+            needs of the industry. needs of the industry.
+          </p>
         </h2>
-        <p className="text-lg">
-          Our vision is to be the leading provider of innovative solutions in
-          the field of technology. We aim to deliver cutting-edge products and
-          services that meet the evolving needs of our customers.
-        </p>
       </div>
     </div>
   );

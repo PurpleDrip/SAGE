@@ -56,7 +56,7 @@ const Header = () => {
     >
       <div className={`${scrolled ? "hide" : ""}`}>
         <a href="#">
-          <img src="/Images/SAGE text_blue.png" alt="logo" className="w-20" />
+          <img src="/Images/SAGETEXT.png" alt="logo" className="w-20" />
         </a>
       </div>
       <div className="links-wrapper flex h-full items-center gap-4 bg-base-200 lg:menu-horizontal rounded-box px-8">
