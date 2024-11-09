@@ -35,21 +35,19 @@ const Theme = () => {
         tabIndex={0}
         className="dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow-2xl"
       >
-        {["default", "aqua", "dark", "light", "retro", "valentine"].map(
-          (theme) => (
-            <li key={theme}>
-              <input
-                type="radio"
-                name="theme-dropdown"
-                className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-                aria-label={theme}
-                value={theme}
-                onChange={handleThemeChange}
-                checked={currentTheme === theme}
-              />
-            </li>
-          )
-        )}
+        {["default", "dark", "light", "retro", "valentine"].map((theme) => (
+          <li key={theme}>
+            <input
+              type="radio"
+              name="theme-dropdown"
+              className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+              aria-label={theme}
+              value={theme}
+              onChange={handleThemeChange}
+              checked={currentTheme === theme}
+            />
+          </li>
+        ))}
       </ul>
     </div>
   );
