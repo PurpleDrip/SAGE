@@ -1,33 +1,30 @@
-// src/data/familyTree.js
+// src/Data/familyTree.js
 export const familyTree = {
-  id: 1,
-  name: "John Doe",
-  gender: "Male",
+  name: "John Smith",
+  role: "CEO",
+  photo: "https://via.placeholder.com/100",
   children: [
     {
-      id: 2,
       name: "Jane Doe",
-      gender: "Female",
+      role: "CTO",
+      photo: "https://via.placeholder.com/100",
       children: [
         {
-          id: 4,
-          name: "Alice Doe",
-          gender: "Female",
-          children: [],
+          name: "Alice Johnson",
+          role: "Lead Engineer",
+          photo: "https://via.placeholder.com/100",
         },
         {
-          id: 5,
-          name: "Bob Doe",
-          gender: "Male",
-          children: [],
+          name: "Bob Brown",
+          role: "Senior Developer",
+          photo: "https://via.placeholder.com/100",
         },
       ],
     },
     {
-      id: 3,
       name: "Jim Doe",
-      gender: "Male",
-      children: [],
+      role: "CFO",
+      photo: "https://via.placeholder.com/100",
     },
   ],
 };

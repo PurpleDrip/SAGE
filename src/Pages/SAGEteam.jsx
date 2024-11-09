@@ -1,7 +1,13 @@
+// src/Pages/SAGEteam.jsx
 import React from "react";
 import { familyTree } from "../Data/familyTree";
 import Tree from "react-d3-tree";
+import ProfileCard from "../Components/ProfileCard";
 import "../tree.css";
+
+const renderNode = ({ nodeDatum }) => {
+  return <ProfileCard nodeData={nodeDatum} />;
+};
 
 const SAGEteam = () => {
   return (
@@ -13,7 +19,8 @@ const SAGEteam = () => {
           pathFunc="step"
           translate={{ x: 400, y: 50 }}
           separation={{ siblings: 2, nonSiblings: 2 }}
-          nodeSize={{ x: 200, y: 100 }}
+          nodeSize={{ x: 250, y: 150 }}
+          renderCustomNodeElement={renderNode}
         />
       </div>
     </div>
