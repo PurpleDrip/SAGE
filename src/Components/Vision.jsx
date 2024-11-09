@@ -12,7 +12,7 @@ const Vision = () => {
         />
       </h3>
       <div className="flex flex-col gap-4">
-        <h2 className="text-2xl card-title flex flex-col items-start">
+        <div className="text-2xl card-title flex flex-col items-start">
           <h2 className=" pl-4 source-code-pro-regular">
             Shastry Associates Global Enterprise,
           </h2>
@@ -25,7 +25,7 @@ const Vision = () => {
             deliver exceptional, future-proof products that meet the evolving
             needs of the industry. needs of the industry.
           </p>
-        </h2>
+        </div>
       </div>
     </div>
   );
