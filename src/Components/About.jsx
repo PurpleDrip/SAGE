@@ -21,7 +21,7 @@ const About = () => {
       >
         <li>
           <a
-            href="#mission"
+            href="/about/#sage-team"
             className="btn btn-sm btn-block btn-ghost justify-start"
           >
             SAGE Team
@@ -29,7 +29,7 @@ const About = () => {
         </li>
         <li>
           <a
-            href="#mission"
+            href="/about/#mission"
             className="btn btn-sm btn-block btn-ghost justify-start"
           >
             Mission
@@ -37,7 +37,7 @@ const About = () => {
         </li>
         <li>
           <a
-            href="#vision"
+            href="/about/#vision"
             className="btn btn-sm btn-block btn-ghost justify-start"
           >
             Vision
@@ -45,7 +45,7 @@ const About = () => {
         </li>
         <li>
           <a
-            href="#goals"
+            href="/about/#goals"
             className="btn btn-sm btn-block btn-ghost justify-start"
           >
             Goals

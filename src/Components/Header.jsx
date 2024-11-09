@@ -53,10 +53,10 @@ const Header = () => {
       <div
         className={`title-bar mt-4 flex ${
           scrolled ? "justify-center" : "justify-between"
-        } items-center px-8 h-16 top-4 z-50 `}
+        } items-center px-8 h-16 top-4  `}
       >
         <div className={`${scrolled ? "hide" : ""}`}>
-          <a href="#">
+          <a href="/">
             <img src="/Images/SAGETEXT.png" alt="logo" className="w-20" />
           </a>
         </div>
@@ -83,7 +83,7 @@ const Header = () => {
       </div>
       <div className="links-wrapper flex items-center gap-4 bg-base-200 lg:menu-horizontal rounded-box px-8 fixed top-12 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
         <Theme />
-        <a href="#">
+        <a href="/">
           <button className="btn-ghost btn btn-primary ">Home</button>
         </a>
         <About />
