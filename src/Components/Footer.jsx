@@ -1,4 +1,6 @@
 import React from "react";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
@@ -36,8 +38,21 @@ const Footer = () => {
         <a className="link link-hover">Privacy policy</a>
         <a className="link link-hover">Cookie policy</a>
       </nav>
+      <nav>
+  <h6 className="footer-title">Follow Us On</h6>
+  <div className="flex space-x-4">
+    <a className="link link-hover" href="https://www.facebook.com/profile.php?id=61561994620408" target="_blank" rel="noopener noreferrer">
+      <FaFacebook size={24} />
+    </a>
+    <a className="link link-hover" href="https://www.linkedin.com/in/shastry-associates-global-enterprises-sage?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+      <FaLinkedin size={24} />
+    </a>
+  </div>
+</nav>
+
     </footer>
   );
 };
 
 export default Footer;
+
