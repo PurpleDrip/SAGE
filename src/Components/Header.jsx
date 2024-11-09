@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import Theme from "./Theme";
 import { useState } from "react";
 import { gsap } from "gsap";
+import About from "./About";
+import Services from "./Service";
+import News from "./News";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -61,15 +64,9 @@ const Header = () => {
         <a href="#">
           <button className="btn-ghost btn btn-primary ">Home</button>
         </a>
-        <a href="#">
-          <button className="btn-ghost btn btn-primary">About Us</button>
-        </a>
-        <a href="#">
-          <button className="btn-ghost btn btn-primary">Services</button>
-        </a>
-        <a href="#">
-          <button className="btn-ghost btn btn-primary">News</button>
-        </a>
+        <About />
+        <Services />
+        <News />
         <a href="#">
           <button className="btn-ghost btn btn-primary">Contact Us</button>
         </a>
