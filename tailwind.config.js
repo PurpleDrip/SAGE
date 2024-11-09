@@ -7,25 +7,26 @@ export default {
   plugins: [require("daisyui")],
   daisyui: {
     themes: [
+      "mytheme",
       {
         mytheme: {
-          primary: "#006AAD",
+          primary: "#006aad",
 
-          secondary: "#35A9EF",
+          secondary: "#35a9ef",
 
-          accent: "#FB6B31",
+          accent: "#fb6b31",
 
-          neutral: "#4b5563",
+          neutral: "#fff",
 
-          "base-100": "#1f2937",
+          "base-100": "#345da7",
 
-          info: "#f3f4f6",
+          info: "#06b6d4",
 
           success: "#00ff00",
 
-          warning: "#00ff00",
+          warning: "#fb6b31",
 
-          error: "#f43f5e",
+          error: "#ff0000",
         },
       },
       "dark",

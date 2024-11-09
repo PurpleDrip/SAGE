@@ -12,9 +12,6 @@
 }
 
 /* Base Styles */
-:root {
-  data-theme: "mytheme";
-}
 html {
   font-size: 100%;
   scroll-behavior: smooth;
@@ -49,6 +46,9 @@ select {
   font: inherit;
 }
 
+.hide {
+  display: none;
+}
 /* Remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
   *,
