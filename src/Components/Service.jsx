@@ -21,7 +21,7 @@ const Services = () => {
       >
         <li>
           <a
-            href="#consulting"
+            href="/services/#courses"
             className="btn btn-sm btn-block btn-ghost justify-start"
           >
             Courses
@@ -29,7 +29,7 @@ const Services = () => {
         </li>
         <li>
           <a
-            href="#development"
+            href="/services/#tutorials"
             className="btn btn-sm btn-block btn-ghost justify-start"
           >
             Tutorials
@@ -37,7 +37,7 @@ const Services = () => {
         </li>
         <li>
           <a
-            href="#design"
+            href="/services/#workshops"
             className="btn btn-sm btn-block btn-ghost justify-start"
           >
             Workshops
@@ -45,7 +45,7 @@ const Services = () => {
         </li>
         <li>
           <a
-            href="#marketing"
+            href="/services/#training"
             className="btn btn-sm btn-block btn-ghost justify-start"
           >
             Training
@@ -53,7 +53,7 @@ const Services = () => {
         </li>
         <li>
           <a
-            href="#support"
+            href="/services/#consulting"
             className="btn btn-sm btn-block btn-ghost justify-start"
           >
             Consulting
