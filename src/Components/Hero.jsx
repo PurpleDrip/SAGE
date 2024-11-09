@@ -19,7 +19,7 @@ const Hero = () => {
   };
   return (
     <>
-      <div className="h-[70vh] my-24 mx-32 hide">
+      <div className="h-[70vh] my-24 mx-32 hide pagination-container">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}

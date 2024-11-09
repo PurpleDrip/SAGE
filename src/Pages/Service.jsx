@@ -16,7 +16,7 @@ const Service = () => {
           </li>
         </ul>
       </div>
-      <div className="flex-grow w-3/5 mx-auto flex flex-col gap-4 mt-16">
+      <div className="flex-grow mx-32 mt-4 p-8 gap-4 flex flex-col shadow-xl border border-primary-content rounded-3xl service-container">
         <h1 className="text-5xl font-bold tracking-[1rem] pl-4 after-underline text-center text-accent after:bg-accent mb-4">
           Courses
         </h1>

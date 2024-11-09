@@ -16,12 +16,12 @@ const AboutUs = () => {
           </li>
         </ul>
       </div>
-      <div className="flex-grow mx-32 p-8 gap-4 flex flex-col shadow-xl border border-primary-content rounded-3xl">
+      <div className="flex-grow mx-32 p-8 gap-4 flex flex-col shadow-xl border border-primary-content rounded-3xl about-container">
         <h1 className="text-5xl font-bold tracking-[1rem] pl-4 after-underline text-center text-accent after:bg-accent">
           About Us
         </h1>
         <div id="sage-team">
-          <h2 className="text-2xl font-bold">SAGE TEAM</h2>
+          <h3 className="text-2xl font-bold">SAGE TEAM</h3>
           <p>
             Shastry Associates Global Enterprise (SAGE) is a dynamic and
             innovative company that specializes in providing cutting-edge

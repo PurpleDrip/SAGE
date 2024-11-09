@@ -153,4 +153,104 @@ select {
   .card {
     width: 100%;
   }
+  .contact-form {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .after-underline {
+    font-size: 1.5rem;
+    letter-spacing: 0.6rem;
+  }
+  .main-bit {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .about-container,
+  .service-container {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    margin-inline: auto;
+    padding: 1rem;
+  }
+  .about-container div > h3,
+  .service-container h1 {
+    font-size: 1.2rem;
+  }
+  .about-container div > p,
+  .service-container p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hide-tb {
+    display: none;
+  }
+  .show-tb {
+    display: block;
+  }
+  .links-wrapper {
+    display: none;
+  }
+  .pagination-container {
+    height: 30vh;
+    margin: 0;
+    width: 90%;
+    margin-inline: auto;
+  }
+  .timeline-container {
+    margin: 0;
+    margin-inline: auto;
+    margin-top: 4rem;
+    width: 100%;
+  }
+  .vision-container {
+    margin: 4rem 2rem;
+    padding: 2rem;
+  }
+  .vision-container h3 {
+    font-size: 2.5rem;
+  }
+  .vision-container h4 {
+    font-size: 1.75rem;
+  }
+  .vision-container p {
+    font-size: 1.25rem;
+  }
+  .offer-wrapper {
+    margin: 0 2rem;
+  }
+  .chat-container {
+    width: 80%;
+    margin: 3rem auto 0;
+    padding: 2rem;
+  }
+  .offer-container {
+    margin: 6rem auto 0;
+    width: 90%;
+  }
+  .offer-container h1 {
+    font-size: 2.5rem;
+  }
+  .offer-container h1 > img {
+    width: 5rem;
+  }
+  .card-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  .card {
+    width: 100%;
+  }
+  .card .para-container {
+    display: none;
+  }
+  .form-container {
+    width: 90%;
+  }
 }

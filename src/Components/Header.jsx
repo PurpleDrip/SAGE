@@ -68,7 +68,7 @@ const Header = () => {
         </div>
 
         <label
-          className={`input input-bordered flex items-center gap-2 hide ${
+          className={`input input-bordered flex items-center gap-2 hide hide-tb ${
             scrolled ? "hide" : ""
           }`}
         >
@@ -86,8 +86,28 @@ const Header = () => {
             />
           </svg>
         </label>
-        <div className="show">
+        <div className="show show-tb">
           <Theme />
+        </div>
+        <div className="dropdown dropdown-end hide show show-tb relative z-30">
+          <div tabIndex={0} role="button" className="btn btn-ghost rounded-btn">
+            Menu
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu dropdown-content bg-base-100 rounded-box z-[1] mt-4 w-52 p-2 shadow"
+          >
+            <li>
+              <a href="/about">About Us</a>
+            </li>
+            <li>
+              <a href="/services">Services</a>
+            </li>
+
+            <li>
+              <a href="/contact">Contact Us</a>
+            </li>
+          </ul>
         </div>
       </div>
 

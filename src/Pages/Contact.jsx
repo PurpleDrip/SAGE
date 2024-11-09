@@ -78,13 +78,16 @@ const Contact = () => {
           </li>
         </ul>
       </div>
-      <div className="flex-grow w-4/5 p-8 gap-4 flex flex-col shadow-xl items-center mt-8 mx-auto border border-primary-content rounded-3xl">
+      <div className="flex-grow w-4/5 p-8 gap-4 flex flex-col shadow-xl items-center mt-8 mx-auto border border-primary-content rounded-3xl form-container">
         <h1 className="text-5xl font-bold tracking-[1rem] pl-4 after-underline text-accent after:bg-secondary">
           Contact Us
         </h1>
-        <form className="flex justify-between gap-16" onSubmit={handleSubmit}>
+        <form
+          className="flex justify-between gap-16 contact-form"
+          onSubmit={handleSubmit}
+        >
           {/* Left Section with Contact Info */}
-          <div className="left-bit flex flex-col gap-8">
+          <div className="left-bit flex flex-col gap-8 hide hide-tb">
             <div className="west flex flex-col gap-2">
               <h1 className="text-2xl font-bold">SAGE-WEST</h1>
               <h3>Dr. Prasad Shastry</h3>
@@ -110,7 +113,7 @@ const Contact = () => {
           </div>
 
           {/* Form Section */}
-          <div className="w-[20rem] flex flex-col">
+          <div className="w-[20rem] flex flex-col main-bit">
             {/* Name Field */}
             <div className="form-control w-full">
               <label className="label">
@@ -174,12 +177,12 @@ const Contact = () => {
                 required
               />
             </div>
-            <button type="submit" className="btn btn-primary mt-4">
+            <button type="submit" className="btn btn-primary mt-4 hide">
               Send Message
             </button>
           </div>
 
-          <div className="w-[20rem] flex flex-col">
+          <div className="w-[20rem] flex flex-col main-bit">
             {/* Country Dropdown */}
             <div className="form-control w-full">
               <label className="label">
@@ -238,6 +241,9 @@ const Contact = () => {
               />
             </div>
           </div>
+          <button type="submit" className="btn btn-primary mt-4 show">
+            Send Message
+          </button>
         </form>
       </div>
       <Footer />
