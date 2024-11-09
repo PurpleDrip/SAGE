@@ -50,7 +50,7 @@ const WeOffer = () => {
           </div>
         </div>
         <div className="flex flex-col gap-16 mt-32">
-          <h1 className="text-5xl font-bold text-center text-accent">
+          <h1 className="text-5xl font-bold text-center text-accent source-code-pro-extra-bold">
             What we Offer at
             <img
               src="/Images/SAGE text_blue.png"
