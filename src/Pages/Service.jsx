@@ -6,6 +6,16 @@ const Service = () => {
   return (
     <div className="min-h-screen flex flex-col justify-between">
       <Header />
+      <div className="breadcrumbs text-sm pl-8">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/services">Services</a>
+          </li>
+        </ul>
+      </div>
       <div className="flex-grow w-3/5 mx-auto flex flex-col gap-4 mt-16">
         <h1 className="text-5xl font-bold tracking-[1rem] pl-4 after-underline text-center text-accent after:bg-accent mb-4">
           Courses

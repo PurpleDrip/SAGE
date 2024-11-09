@@ -6,6 +6,16 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen flex flex-col justify-between gap-8">
       <Header />
+      <div className="breadcrumbs text-sm pl-8">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about">About Us</a>
+          </li>
+        </ul>
+      </div>
       <div className="flex-grow mx-32 p-8 gap-4 flex flex-col shadow-xl border border-primary-content rounded-3xl">
         <h1 className="text-5xl font-bold tracking-[1rem] pl-4 after-underline text-center text-accent after:bg-accent">
           About Us
@@ -44,6 +54,7 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
+
       <Footer />
     </div>
   );
