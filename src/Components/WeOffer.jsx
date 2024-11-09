@@ -62,50 +62,43 @@ const WeOffer = () => {
             {[
               {
                 title: "Courses",
-                image:
-                  "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+                image: "/Images/Offer1.png",
                 isNew: false,
                 para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
               },
               {
                 title: "Tutorials",
-                image:
-                  "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+                image: "/Images/Offer1.png",
                 isNew: true,
                 para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
               },
               {
                 title: "Training",
-                image:
-                  "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+                image: "/Images/Offer1.png",
                 isNew: false,
                 para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
               },
               {
                 title: "Consulting",
-                image:
-                  "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+                image: "/Images/Offer1.png",
                 isNew: true,
                 para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
               },
               {
                 title: "Workshops",
-                image:
-                  "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+                image: "/Images/Offer1.png",
                 isNew: false,
                 para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
               },
               {
                 title: "News",
-                image:
-                  "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+                image: "/Images/Offer1.png",
                 isNew: false,
                 para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
               },
               {
                 title: "Upcoming Events",
-                image:
-                  "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+                image: "/Images/Offer1.png",
                 isNew: false,
                 para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
               },
@@ -116,7 +109,7 @@ const WeOffer = () => {
                 onMouseEnter={() => handleMouseEnter(i)}
                 onMouseLeave={handleMouseLeave}
               >
-                <figure>
+                <figure className="h-48 bg-[#B3E240]">
                   <img src={item.image} alt={item.title} />
                 </figure>
                 <div className="card-body">
