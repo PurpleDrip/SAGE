@@ -38,7 +38,7 @@ const Hero = () => {
       >
         <SwiperSlide>
           <img
-            src="/Images/SAGE_BOOk+ARCS.png"
+            src="/Images/hero1.png"
             alt="hero"
             className="object-contain h-full"
           />
