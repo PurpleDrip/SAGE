@@ -28,7 +28,7 @@ const WeOffer = () => {
               Rookie
               <time className="text-xs opacity-50">12:45</time>
             </div>
-            <div className="chat-bubble">What do u offer at SAGE?</div>
+            <div className="chat-bubble ">What do u offer at SAGE?</div>
             <div className="chat-footer opacity-50">Delivered</div>
           </div>
           <div className="chat chat-end">
@@ -50,7 +50,7 @@ const WeOffer = () => {
           </div>
         </div>
         <div className="flex flex-col gap-16 mt-32">
-          <h1 className="text-5xl font-bold text-center text-accent source-code-pro-extra-bold">
+          <h1 className="text-5xl font-bold text-center text-accent source-code-pro-extra-bold after-underline after:bg-secondary">
             What we Offer at
             <img
               src="/Images/SAGE text_blue.png"

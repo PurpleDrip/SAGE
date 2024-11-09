@@ -50,6 +50,19 @@ select {
   display: none;
 }
 
+.after-underline {
+  position: relative;
+}
+.after-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  width: 40%;
+  height: 4px;
+  transform: translateX(-50%);
+}
+
 .source-code-pro-thin {
   font-family: "Source Code Pro", monospace;
   font-optical-sizing: auto;

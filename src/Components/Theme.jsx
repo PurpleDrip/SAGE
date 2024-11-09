@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Theme = () => {
+  const [currentTheme, setCurrentTheme] = useState("default");
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme") || "mytheme";
+    document.documentElement.setAttribute("data-theme", savedTheme);
+    setCurrentTheme(savedTheme === "mytheme" ? "default" : savedTheme);
+  }, []);
+
   const handleThemeChange = (e) => {
     const selectedTheme = e.target.value;
-    if (selectedTheme === "default") {
-      document.documentElement.setAttribute("data-theme", "mytheme");
-    } else {
-      document.documentElement.setAttribute("data-theme", selectedTheme);
-    }
+    const themeToSet = selectedTheme === "default" ? "mytheme" : selectedTheme;
+    document.documentElement.setAttribute("data-theme", themeToSet);
+    localStorage.setItem("theme", themeToSet);
+    setCurrentTheme(selectedTheme);
   };
 
   return (
@@ -28,7 +35,7 @@ const Theme = () => {
         tabIndex={0}
         className="dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow-2xl"
       >
-        {["default", "light", "retro", "cyberpunk", "valentine", "aqua"].map(
+        {["default", "aqua", "dark", "light", "retro", "valentine"].map(
           (theme) => (
             <li key={theme}>
               <input
@@ -38,6 +45,7 @@ const Theme = () => {
                 aria-label={theme}
                 value={theme}
                 onChange={handleThemeChange}
+                checked={currentTheme === theme}
               />
             </li>
           )

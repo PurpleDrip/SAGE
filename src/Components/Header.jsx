@@ -89,7 +89,7 @@ const Header = () => {
         <About />
         <Services />
         <News />
-        <a href="#">
+        <a href="/contact">
           <button className="btn-ghost btn btn-primary">Contact Us</button>
         </a>
       </div>

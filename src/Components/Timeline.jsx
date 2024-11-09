@@ -11,7 +11,7 @@ const Timeline = () => {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="text-primary h-5 w-5"
+              className="text-accent h-5 w-5"
             >
               <path
                 fillRule="evenodd"
@@ -20,16 +20,16 @@ const Timeline = () => {
               />
             </svg>
           </div>
-          <hr className="bg-primary" />
+          <hr className="bg-accent" />
         </li>
         <li>
-          <hr className="bg-primary" />
+          <hr className="bg-accent" />
           <div className="timeline-middle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="text-primary h-5 w-5"
+              className="text-accent h-5 w-5"
             >
               <path
                 fillRule="evenodd"
@@ -39,17 +39,17 @@ const Timeline = () => {
             </svg>
           </div>
           <div className="timeline-end timeline-box">1st Milestone</div>
-          <hr className="bg-primary" />
+          <hr className="bg-accent" />
         </li>
         <li>
-          <hr className="bg-primary" />
+          <hr className="bg-accent" />
           <div className="timeline-start timeline-box">2nd Milestone</div>
           <div className="timeline-middle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="text-primary h-5 w-5"
+              className="text-accent h-5 w-5"
             >
               <path
                 fillRule="evenodd"
