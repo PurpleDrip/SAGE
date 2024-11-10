@@ -201,6 +201,9 @@ select {
   .card {
     width: 90%;
   }
+  .dropdown-container-mb {
+    z-index: 100;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -213,11 +216,21 @@ select {
   .links-wrapper {
     display: none;
   }
+  .title-bar {
+    position: relative;
+    z-index: 100;
+    margin-top: 0;
+  }
   .pagination-container {
+    position: relative;
+    z-index: 0;
     height: 30vh;
     margin: 0;
     width: 90%;
     margin-inline: auto;
+  }
+  .dropdown-container-mb {
+    z-index: 100;
   }
   .timeline-container {
     margin: 0;

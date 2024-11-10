@@ -105,7 +105,7 @@ const Header = () => {
             </svg>
           </button>
         </div>
-        <div className="absolute top-12 right-8 show show-tb">
+        <div className="fixed top-20 right-8 show show-tb dropdown-container-mb z-50">
           {open && (
             <div className="flex flex-col gap-2 p-4 bg-base-200 rounded-box shadow-xl">
               <div className="dropdown">
@@ -145,7 +145,7 @@ const Header = () => {
                 </div>
                 <ul
                   tabIndex={0}
-                  className="dropdown-content z-[1] menu p-2 shadow bg-base-200 rounded-box w-52"
+                  className="dropdown-content z-[10] menu p-2 shadow bg-base-200 rounded-box w-52"
                 >
                   <li>
                     <a href="/services">Courses</a>
