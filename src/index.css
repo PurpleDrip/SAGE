@@ -111,6 +111,9 @@ select {
   font-weight: 700;
   font-style: normal;
 }
+.card-text {
+  letter-spacing: 0.5rem;
+}
 
 @media (max-width: 768px) {
   .hide {
