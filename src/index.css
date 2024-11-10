@@ -98,6 +98,19 @@ select {
   object-fit: cover;
   object-position: top 10%;
 }
+.sensation-regular {
+  font-family: "Sensation", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sensation-bold {
+  font-family: "Sensation", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
 
 @media (max-width: 768px) {
   .hide {
@@ -185,6 +198,9 @@ select {
   .image-holder {
     width: 100%;
   }
+  .card {
+    width: 90%;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -258,5 +274,8 @@ select {
   }
   .image-holder {
     width: 100%;
+  }
+  .card {
+    width: 90%;
   }
 }

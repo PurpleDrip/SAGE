@@ -4,7 +4,7 @@ const Vision = () => {
   return (
     <div className="flex  flex-row-reverse h-auto mx-16 my-32 p-8 rounded-3xl shadow-2xl bg-primary text-primary-content border border-primary-content vision-container">
       <div className="h-full w-3/4 image-holder">
-        <h3 className="text-4xl font-bold mb-4 card-title source-code-pro-extra-bold flex items-center">
+        <h3 className="text-4xl font-bold mb-4 card-title sensation-bold flex items-center">
           Vision of
           <img
             src="/Images/SAGE text_blue.png"
@@ -13,10 +13,10 @@ const Vision = () => {
           />
         </h3>
         <div className="flex flex-col gap-4">
-          <h4 className="text-2xl card-title pl-4 source-code-pro-regular">
+          <h4 className="text-2xl card-title pl-4 sensation-bold">
             Shastry Associates Global Enterprise
           </h4>
-          <p className="text-lg">
+          <p className="text-lg sensation-regular">
             It is also known as SAGE, aims to lead in RF, microwave, and
             wireless technologies through focused research and development, as
             well as strategic partnerships. We plan to expand our product line
