@@ -43,7 +43,7 @@ const SageTeam = () => {
             ].map((member, index) => (
               <div
                 key={index}
-                className="card bg-blue-900 text-white w-64 shadow-lg flex flex-col items-center p-4 rounded-xl"
+                className="card bg-primary text-white w-64 shadow-lg flex flex-col items-center p-4 rounded-xl"
               >
                 <img
                   src={member.image || placeholderImage}
@@ -72,7 +72,7 @@ const SageTeam = () => {
             ].map((member, index) => (
               <div
                 key={index}
-                className="card bg-blue-900 text-white w-64 shadow-lg flex flex-col items-center p-4 rounded-xl"
+                className="card bg-primary text-white w-64 shadow-lg flex flex-col items-center p-4 rounded-xl"
               >
                 <img
                   src={member.image || placeholderImage}
@@ -115,7 +115,7 @@ const SageTeam = () => {
             ].map((member, index) => (
               <div
                 key={index}
-                className="card bg-blue-900 text-white w-64 shadow-lg flex flex-col items-center p-4 rounded-xl"
+                className="card bg-primary   text-white w-64 shadow-lg flex flex-col items-center p-4 rounded-xl"
               >
                 <img
                   src={member.image || placeholderImage}
@@ -141,7 +141,7 @@ const SageTeam = () => {
               (member, index) => (
                 <div
                   key={index}
-                  className="card bg-blue-900 text-white w-64 shadow-lg flex flex-col items-center p-4 rounded-xl"
+                  className="card bg-primary text-white w-64 shadow-lg flex flex-col items-center p-4 rounded-xl"
                 >
                   <img
                     src={member.image || placeholderImage}
@@ -178,7 +178,7 @@ const SageTeam = () => {
             ].map((member, index) => (
               <div
                 key={index}
-                className="card bg-blue-900 text-white w-64 shadow-lg flex flex-col items-center p-4 rounded-xl"
+                className="card bg-primary text-white w-64 shadow-lg flex flex-col items-center p-4 rounded-xl"
               >
                 <img
                   src={member.image || placeholderImage}
@@ -209,7 +209,7 @@ const SageTeam = () => {
             ].map((member, index) => (
               <div
                 key={index}
-                className="card bg-blue-900 text-white w-64 shadow-lg flex flex-col items-center p-4 rounded-xl"
+                className="card bg-primary text-white w-64 shadow-lg flex flex-col items-center p-4 rounded-xl"
               >
                 <img
                   src={member.image || placeholderImage}
