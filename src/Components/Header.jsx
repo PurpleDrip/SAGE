@@ -14,6 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Header = () => {
   const [switched, setSwitched] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     // Only run on non-mobile devices
@@ -88,7 +89,112 @@ const Header = () => {
         <div className="show show-tb">
           <Theme />
         </div>
-        {/* <div> Add the Burger menu here</div> */}
+        <div className="show show-tb" onClick={() => setOpen(!open)}>
+          <button className="btn btn-primary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                fillRule="evenodd"
+                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+        <div className="absolute top-12 right-8 show show-tb">
+          {open && (
+            <div className="flex flex-col gap-2 p-4 bg-base-200 rounded-box shadow-xl">
+              <div className="dropdown">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="btn btn-ghost w-full"
+                >
+                  About Us
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content z-[1] menu p-2 shadow bg-base-200 rounded-box w-52"
+                >
+                  <li>
+                    <a href="/sage-team">SAGE Team</a>
+                  </li>
+                  <li>
+                    <a href="/about/#mission">Mission</a>
+                  </li>
+                  <li>
+                    <a href="/about/#vision">Vision</a>
+                  </li>
+                  <li>
+                    <a href="/about/#goals">Goals</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="dropdown">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="btn btn-ghost w-full"
+                >
+                  Services
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content z-[1] menu p-2 shadow bg-base-200 rounded-box w-52"
+                >
+                  <li>
+                    <a href="/services">Courses</a>
+                  </li>
+                  <li>
+                    <a href="/services">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="/services">Workshops</a>
+                  </li>
+                  <li>
+                    <a href="/services">Training</a>
+                  </li>
+                  <li>
+                    <a href="/services">Consulting</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="dropdown">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="btn btn-ghost w-full"
+                >
+                  News
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content z-[1] menu p-2 shadow bg-base-200 rounded-box w-52"
+                >
+                  <li>
+                    <a href="/">Upcoming News</a>
+                  </li>
+                  <li>
+                    <a href="/">NewsLetters</a>
+                  </li>
+                  <li>
+                    <a href="/">Photo Gallery</a>
+                  </li>
+                </ul>
+              </div>
+
+              <a href="/contact" className="btn btn-ghost w-full">
+                Contact Us
+              </a>
+            </div>
+          )}
+        </div>
       </div>
 
       <div className="hide links-wrapper flex items-center gap-4 bg-base-200 lg:menu-horizontal rounded-box px-8 fixed top-12 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
