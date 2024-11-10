@@ -25,13 +25,13 @@ const SageTeam = () => {
         </ul>
       </div>
       <div className="flex-grow mx-32 p-8 gap-4 flex flex-col shadow-xl border border-primary-content rounded-3xl about-container">
-        <h2 className="text-5xl font-bold tracking-[1rem] pl-4 after-underline text-center text-accent after:bg-accent">
+        <h2 className="text-5xl font-bold tracking-[1rem] pl-4 after-underline text-center text-accent after:bg-accent ">
           SAGE TEAM
         </h2>
 
         {/* Executive Board */}
         <div className="team-section">
-          <h3 className="text-5xl font-bold tracking-[1rem] pl-4 text-center text-accent my-8">
+          <h3 className="text-5xl font-bold tracking-[1rem] pl-4 text-center text-accent my-8 card-text">
             Executive Board
           </h3>
           <div className="flex flex-wrap justify-center gap-16">
@@ -61,7 +61,7 @@ const SageTeam = () => {
 
         {/* Advisory Board */}
         <div className="team-section mt-16">
-          <h3 className="text-5xl font-bold tracking-[1rem] pl-4 text-center text-accent my-8">
+          <h3 className="text-5xl font-bold tracking-[1rem] pl-4 text-center text-accent my-8 card-text">
             Advisory Board
           </h3>
           <div className="flex flex-wrap justify-center gap-16">
@@ -90,7 +90,7 @@ const SageTeam = () => {
 
         {/* Associates */}
         <div className="team-section mt-16">
-          <h3 className="text-5xl font-bold tracking-[1rem] pl-4 text-center text-accent my-8">
+          <h3 className="text-5xl font-bold tracking-[1rem] pl-4 text-center text-accent my-8 card-text">
             Associates
           </h3>
           <div className="flex flex-wrap justify-center gap-16">
@@ -133,7 +133,7 @@ const SageTeam = () => {
 
         {/* Graphics Design and Artwork */}
         <div className="team-section mt-16">
-          <h3 className="text-5xl font-bold tracking-[1rem] pl-4 text-center text-accent my-8">
+          <h3 className="text-5xl font-bold tracking-[1rem] pl-4 text-center text-accent my-8 card-text">
             Graphics Design and Artwork
           </h3>
           <div className="flex flex-wrap justify-center gap-16">
@@ -160,7 +160,7 @@ const SageTeam = () => {
 
         {/* IT/Website Advisors */}
         <div className="team-section mt-16">
-          <h3 className="text-5xl font-bold tracking-[1rem] pl-4 text-center text-accent my-8">
+          <h3 className="text-5xl font-bold tracking-[1rem] pl-4 text-center text-accent my-8 card-text">
             IT/Website Advisors
           </h3>
           <div className="flex flex-wrap justify-center gap-16">
@@ -196,7 +196,7 @@ const SageTeam = () => {
 
         {/* Social Media Advisor */}
         <div className="team-section mt-16">
-          <h3 className="text-5xl font-bold tracking-[1rem] pl-4 text-center text-accent my-8">
+          <h3 className="text-5xl font-bold tracking-[1rem] pl-4 text-center text-accent my-8 card-text">
             Social Media Advisor
           </h3>
           <div className="flex flex-wrap justify-center gap-16">
