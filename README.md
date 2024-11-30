@@ -18,4 +18,4 @@
    ```bash
     npm run dev
     ```
-## The site will be up and running at http://localhost:5173
+The site will be up and running at http://localhost:5173
